@@ -7,7 +7,7 @@
 Grocery shopping turning streamlined.
 
 ## About
-- Grocery in One focuses on taking user input and cross-referencing it with gathered data to give grocery recommendations to avoid overbuying or underbuying
+- PantryPilot focuses on taking user input and cross-referencing it with gathered data to give grocery recommendations to avoid overbuying or underbuying
 
 ## Inspiration
 - This project is inspired by a personal project I wanted to work on relating to health and  nutrition
