@@ -1,19 +1,52 @@
 # PantryPilot
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-
-Grocery shopping turning streamlined.
+![Python](https://img.shields.io/badge/-Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
 ## About
-- PantryPilot focuses on taking user input and cross-referencing it with gathered data to give grocery recommendations to avoid overbuying or underbuying
+NLP-based **recipe recommendation system** that matches grocery and pantry ingredients to recipes through a vectorized similarity search.
 
-## Inspiration
-- This project is inspired by a personal project I wanted to work on relating to health and  nutrition
-- It attempts to tackle the cost of eating out and instead, make meals at home
-- In addition, it focuses on reducing the time put into making grocery lists or wandering through stores trying to figure out which items to purchase
+Designed for:
+- **Speed**
+- **Explainability** (why recipes are suggested)
+- **Food-waste** reduction
 
-## Next Steps
-- Fix some of the bugs
-- Incorporate a frontend side with interactive parts
+## Problem
+- Choosing what to cook with limited ingredients is oftentimes difficult and can lead to major food waste
+- Although recipe platforms provide great recommendations to users, it often makes the assumption that they will shop for missing ingredients, instead of based on what people already have
+
+## Solution
+Model recipe selection through:
+- Pantry items - treated as queries
+- Recipes - treated as documents
+- NLP vecotrization and similarity search
+- Results optimized for pantry utilization
+
+## Features
+- NLP-based recipe matching
+    - Tokenizes and vectorizes recipe ingredients
+    - Uses cosine similarity to rank recipes (based on overlap)
+    - Scales to **250K+ recipes** with vector search
+- Explainability in recommendations (provided)
+    - Overlapping ingredients
+    - Similarity score
+    - Pantry utilization percentage
+- Pantry utilization (optimized)
+    - Recipes are ranked by similarity and efficiency (how they use available ingredients)
+
+## Architecture
+- User pantry
+- Text preprocessing
+- TF-IDF vectorization
+- Cosine similarity search
+- Ranked recommendations (top similarity)
+- Explainability and utilization scores
+
+## How to Run
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```

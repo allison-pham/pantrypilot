@@ -1,0 +1,4 @@
+# Commands
+python -m venv .venv
+.venv\Scripts\activate
+pip install pandas numpy scikit-learn
