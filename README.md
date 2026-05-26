@@ -4,6 +4,8 @@
 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
+Streamline grocery shopping with a few clicks (grocery in one)
+
 ## About
 NLP-based **recipe recommendation system** that matches grocery and pantry ingredients to recipes through a vectorized similarity search.
 
